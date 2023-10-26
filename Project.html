@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Project Management</h2>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tasks">Tasks</a></li>
+        <li><a href="#communication">Communication</a></li>
+        <li><a href="#profile">Profile</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div id="home">
+        <h2>Welcome to the Project Management Tool</h2>
+        <p>Here you can manage tasks and communicate with team members.</p>
+      </div>
+
+      <div id="tasks">
+        <h2>Tasks</h2>
+        <ul id="taskList">
+          <li>
+            <input type="checkbox" id="task1">
+            <label for="task1">Task 1</label>
+          </li>
+          <li>
+            <input type="checkbox" id="task2">
+            <label for="task2">Task 2</label>
+          </li>
+          <!-- Add more tasks dynamically -->
+        </ul>
+        <input type="text" id="newTask" placeholder="Add a new task">
+        <button class="add"onclick="addTask()">Add Task</button>
+      </div>
+
+      <div id="communication">
+        <h2>Communication</h2>
+        <textarea id="chat" placeholder="Chat with your team"></textarea>
+        <button onclick="sendMessage()">Send</button>
+      </div>
+
+      <div id="profile">
+        <h2>Profile</h2>
+        <p>Name: Rishu Raj</p>
+        <p>Email: rishuraj@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
